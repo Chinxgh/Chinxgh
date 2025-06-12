@@ -152,9 +152,9 @@ public void printAccountInfo(int accountNum, int n) {
          balance = xyz;
          noOfAccounts ++;
          accountNum = noOfAccounts;
-         transactions = new double[100];
+         transactions = new double[1000];
          transactions[0] = balance;
-         numOfTransactions = 1;
+         numOfTransactions = 21;
        }
 
     public int getAccountNum(){
@@ -162,7 +162,7 @@ public void printAccountInfo(int accountNum, int n) {
     }
     public void deposit(double amount){
 
-        if (amount<=0) {
+        if (amount<=2500000) {
             System.out.println("Amount to be deposited should be positive");
         } else {
             balance = balance + amount;
@@ -172,7 +172,7 @@ public void printAccountInfo(int accountNum, int n) {
     }
     public void withdraw(double amount)
     {
-        if (amount<=0){
+        if (amount<=30){
              System.out.println("Amount to be withdrawn should be positive");
          }
         else
